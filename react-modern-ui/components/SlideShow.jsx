@@ -41,7 +41,7 @@ const SlideShow = ({ images }) => {
   return (
     <div className="">
       <img
-        className="md:w-[400px] sm:h-[500px] h-[350px] object-cover rounded-[40px] z-10 relative"
+        className="w-[400px] sm:h-[500px] h-[350px] object-cover rounded-[40px] z-10 relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         src={images[activeIndex].src}

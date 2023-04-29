@@ -37,7 +37,7 @@ const Hero = () => (
           />
           <motion.p
             variants={textVariant(1.1)}
-            className={`${styles.p} text-[40px] bottom-0 text-left text-secondary-white`}
+            className={`${styles.p} text-[40px]  bottom-0 text-left text-secondary-white`}
           >
             JOIN THE ADVENTURE <br />
             TO DISCOVER THE TRUTH
@@ -46,10 +46,10 @@ const Hero = () => (
       </div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="relative w-full md:mt-[40px]"
+        className="relative w-full mt-[40px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[100px] z-[0] -top-[30px]" />
-        <div className="grid grid-cols-3 gap-4">
+        <div className="md:grid grid-cols-3 space-y-4 md:space-y-0 gap-4 sm:flex flex-col">
           {slideImages.map((slide, index) => (
             <div className="slide-container" key={index}>
               <SlideShow src={slide.images[0].src} images={slide.images} />
