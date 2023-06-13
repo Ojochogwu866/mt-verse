@@ -1,6 +1,7 @@
-"use client";
-import { useState, useRef, useEffect } from "react";
-import gsap from "gsap";
+'use client';
+
+import { useState, useRef, useEffect } from 'react';
+import gsap from 'gsap';
 
 const SlideShow = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -24,14 +25,14 @@ const SlideShow = ({ images }) => {
         duration: 1.5,
         x: -50,
         opacity: 0,
-        ease: "power3.out",
+        ease: 'power3.out',
         onComplete: () => {
           gsap.set(imageRef.current, { x: 50, opacity: 0 });
           gsap.to(imageRef.current, {
             duration: 1.5,
             x: 0,
             opacity: 1.0,
-            ease: "power3.out",
+            ease: 'power3.out',
           });
         },
       });

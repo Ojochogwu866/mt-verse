@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
 
 const Navbar = () => (
   <motion.nav
@@ -18,7 +18,7 @@ const Navbar = () => (
           src="/search.svg"
           className="w-[24px] h-[24px] object-contain"
           alt="search"
-        />{" "}
+        />{' '}
         <span className=" font-extrabold text-24px leading-[30px] text-white ml-3">
           Search Era
         </span>
